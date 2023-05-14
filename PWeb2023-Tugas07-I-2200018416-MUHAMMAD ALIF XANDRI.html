@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body> 
+    <header>
+  <nav>
+    <h1>Pesona Indonesia</h1>
+    <ul>
+  </nav>
+</header>
+    <div class="form-container">
+        <img src="3.png" alt="form image">
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea><br><br>
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<script>
+  function submitForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    document.getElementById("result").innerHTML = "Thank you, " + name + "! We have received your message: " + message;
+    document.getElementById("myForm").reset();
+  }
+</script>
+<footer>
+  <p>&copy; 2023 My Website. All rights reserved.</p>
+</footer>
+</body>
+</html>
