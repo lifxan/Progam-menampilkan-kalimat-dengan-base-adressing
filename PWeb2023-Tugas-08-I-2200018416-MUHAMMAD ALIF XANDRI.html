@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biodata Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BIODATA OF AHMAD DAHLAN UNIVERSITY STUDENTS</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="loadPage('home')">Home</a></li>
+            <li><a href="#" onclick="loadPage('contact')">Contact</a></li>
+            <li><a href="#" onclick="loadPage('biodata')">Biodata</a></li>
+        </ul>
+    </nav>
+
+    <main id="mainContent">
+        <section id="homeSection">
+         
+          <p class="image-container">
+    <img src="HOME.png" width="80%" h>
+            </p>
+        </section>
+
+        <section id="contactSection" class="hidden">
+            <h2>Contact</h2>
+            <p>Contact information goes here.</p>
+            <p>Wa : 0895618355xxx</p>
+            <p>email : 2200018416@webmail.uad.ac.id</p>
+            <p>instagram : Lifxan_</p>
+            <p>Replit : muhammadalifxandri@gmail</p>
+        </section>
+
+        <section id="biodataSection" class="hidden">
+            <h2>Biodata</h2>
+            <form id="biodataForm" onsubmit="validateForm(event)">
+                <div class="form-group">
+                    <label for="nama">Name:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="nim">NIM:</label>
+                    <input type="text" id="nim" name="nim" required>
+                </div>
+                <div class="form-group">
+                    <label for="jurusan">Jurusan:</label>
+                    <select id="jurusan" name="jurusan" required>
+                        <option value="">Select Jurusan</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Information Systems">Information Systems</option>
+                        <option value="Visual Communication Design">Visual Communication Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Address:</label>
+                    <textarea id="alamat" name="alamat" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+            <div id="output"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CREATED BY - MUHAMMAD ALIF XANDRI.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
