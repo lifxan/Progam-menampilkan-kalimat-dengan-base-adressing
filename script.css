@@ -1,0 +1,63 @@
+/* Konsep Pewarnaan */
+body {
+  background-image: url('bon.gif');
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  padding: 10px;
+  color: #fff; /* Ubah warna font menjadi putih */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff; /* Ubah warna font menjadi putih */
+  text-decoration: none;
+}
+
+aside {
+  
+  padding: 20px;
+}
+
+/* Konsep Typografi */
+h1,
+h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #fff; /* Ubah warna font menjadi putih */
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff; /* Ubah warna font menjadi putih */
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section {
+  border: 1px solid red;
+  padding: 10px;
+}
+
+/* Konsep Keseimbangan */
+.profile {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
